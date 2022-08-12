@@ -1,0 +1,68 @@
+{
+  "main": {
+    "name": "Yu Shih Fu",
+    "occupation": "",
+    "description": "",
+    "image": "",
+    "bio": "Hi there!",
+    "bachelorSchool": "Taipei Medical University",
+    "bachelorTitle": "Bachelor of Science",
+    "bachelorSchoolImage": "TMU.jpg",
+    "masterSchool": "National Taiwan University",
+    "masterTitle": "Master of Engineering, Biomedical Electronic and Bioinformatics",
+    "masterSchoolImage": "NTU.jpg"
+  },
+
+  "socialNetworks": {
+    "linkedin": {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/yu-shih-fu-663031248/"
+    },
+    "github": {
+      "name": "github",
+      "url": "https://github.com/FYssss"
+    }
+  },
+
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": "University of Kent - UK",
+        "degree": "Bachelor's Degree, Computer Science",
+        "graduated": "July 2016",
+        "description": "Graduated with First Class Honours"
+      }
+    ],
+    "work": [
+      {
+        "company": "PAPA",
+        "title": "Founder and CEO",
+        "years": "May 2019 - Present",
+        "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "COVID-19 Tracker",
+        "category": "",
+        "image": "covid-tracker.jpg",
+        "url": "https://github.com/FYssss/covid19-track-app"
+      },
+      {
+        "title": "Weather App",
+        "category": "",
+        "image": "weather-app.jpg",
+        "url": ""
+      },
+      {
+        "title": "",
+        "category": "",
+        "image": "",
+        "url": ""
+      }
+    ]
+  }
+}

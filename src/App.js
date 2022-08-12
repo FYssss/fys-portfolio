@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import NavMenu from "./components/NavMenu";
+import Header from "./pages/Header";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
+  const [resumeData, setResumeData] = useState({});
+
+  useEffect(() => {
+    fetch("/resumeData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setResumeData(data);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavMenu className="" />
+      <Header data={resumeData.main} />
+      <About data={resumeData.main} />
+      <Projects data={resumeData.portfolio} />
+      <Footer data={resumeData.socialNetworks} />
     </div>
   );
 }
